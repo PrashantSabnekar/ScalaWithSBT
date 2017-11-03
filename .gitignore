@@ -1,3 +1,5 @@
 .idea/
 *.class
 Scala.iml
+project/
+target/
