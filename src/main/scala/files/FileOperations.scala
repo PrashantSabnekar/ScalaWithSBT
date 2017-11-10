@@ -1,14 +1,13 @@
 package files
 
-
 import java.io.{File, PrintWriter}
-
 import scala.io.Source
-
-
 
 class FileOperations {
 
+  def callFromjava() = {
+    "This is called from java"
+  }
 }
 
 object FileOperations {
@@ -20,7 +19,6 @@ object FileOperations {
     writer.write("Line 2\n")
     writer.write("Line 3\n")
     writer.close()
-
 
     Source.fromFile("Test.txt").getLines().foreach( x => println(x) )
 
